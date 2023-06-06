@@ -317,6 +317,10 @@ p {
       flex-direction: column;
       width: 100%;
    }
+   .buttons-download .download-ios,
+   .buttons-download .download-mac {
+      opacity: 1;
+}
 
    .max-width-page img {
       width: 100px;
