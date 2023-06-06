@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@200;300;400;500;600;700&display=swap');
+
+:root {
+   --_font-main: 'Bai Jamjuree', sans-serif;
+
+   --bg-btn-ios: hsl(171, 66%, 44%);
+   --bg-btn-mac: hsl(233, 100%, 69%);
+   --color-title: hsl(210, 10%, 33%);
+   --color-paragraph: hsl(201, 11%, 66%);
+}
+
+/* General Formatting */
+
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   list-style-type: none;
+   font-family: var(--_font-main);
+}
+
+h1, h2, h3 {
+   color: var(--color-title);
+   margin-bottom: .5em;
+}
+
+h1 {
+   font-size: 2.5em;
+}
+
+h2 {
+   font-size: 2em;;
+}
+
+h3 {
+   font-size: 1.8em;
+}
+
+p {
+   font-size: 1.2em;
+   color: var(--color-paragraph);
+   letter-spacing: 1px;
+   line-height: 32px;
+}
+
+.max-width-page {
+   width: 900px;
+   margin: 0 auto;
+   padding: 5em 1em;
+   display: flex;
+   text-align: center;
+   flex-flow: column wrap;
+   align-items: center;
+}
+
+.max-width-page img {
+   width: 150px;
+   margin-bottom: 3em;
+}
+
+/* Buttons */
+
+.buttons-download {
+   display: flex;
+   gap: 1em;
+   padding: 3em 1em;
+}
+
+.buttons-download .download-ios,
+.buttons-download .download-mac {
+   padding: 1em 1.5em;
+   border-radius: 50px;
+   border: none;
+   font-size: 1.4em;
+   color: white;
+   cursor: pointer;
+   transition: .2s;
+   opacity: .8;
+}
+.buttons-download .download-ios:hover,
+.buttons-download .download-mac:hover {
+   opacity: 1;
+   scale: 1.05;
+} 
+
+.buttons-download .download-ios{
+   background-color: var(--bg-btn-ios);
+}
+
+.buttons-download .download-mac {
+   background-color: var(--bg-btn-mac);
+}
+
+/* Content */
+
+#header-main {
+   padding-top: 2em;
+   background-image: url(../images/bg-header-desktop.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+}
+
+#container {
+   display: flex;
+   flex-flow: column wrap;
+   align-items: center;
+}
+
+/* Infos Section */
+
+.about-infos-page {
+   align-self: flex-start;
+   display: flex;
+   align-items: center;
+   gap: 4em;
+   width: 100%;
+   margin: 2em 0;
+}
+.about-infos-page #computer-background {
+   width: 50%;
+}
+#computer-background img {
+   width: 100%;
+   margin-left: -100px;
+}
+
+.about-infos-page #about-infos {
+   display: flex;
+   flex-flow: column wrap;
+   gap: 3em;
+   padding: 1em;
+   justify-content: center;
+}
+
+#about-infos .infos {
+   max-width: 60%;
+}
+
+/* Devices picture section */
+
+.devices-connects {
+   width: 50%;
+   padding: 1em;
+}
+
+.devices-connects img {
+   width: 100%;
+}
+
+/* Benefits */
+
+.benefits-product {
+   display: flex;
+   justify-content: space-evenly;
+   padding: 1em;
+   margin-bottom: 2em;
+}
+.block-benefits-product {
+   max-width: 25%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+   gap: .5em;
+}
+
+.block-benefits-product img {
+   width: 50px;
+   margin-bottom: 1.5em;
+}
+
+/* Partners */
+
+.partners {
+   margin: 4em 0;
+   padding: 1em;
+   width: 100%;
+}
+
+.partners ul {
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+   flex-wrap: wrap;
+   row-gap: 1em;
+}
+
+.partners ul li {
+   padding: 1em;
+}
+
+.partners img {
+   width: 180px;
+}
+
+/* Footer */
+
+#footer-main {
+   max-width: 80%;
+   margin: 0 auto;
+   padding: 3em;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+#footer-main img {
+   width: 40px;
+}
+
+#footer-main .policies-site {
+   max-width: 70%;
+}
+
+#footer-main .policies-site ul {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: 1fr 1fr;
+   gap: 1em 2em;
+}
+.policies-site ul li a {
+   text-decoration: none;
+   font-size: 1em;
+   color: var(--color-title);
+}
+.policies-site ul li a:hover {
+   color: var(--bg-btn-ios);
+}
+
+#footer-main .social-medias {
+   display: flex;
+   align-items: center;
+   gap: 1em;
+}
+#footer-main .social-medias img {
+   width: 30px;
+   transition: .3s;
+}
+#footer-main .social-medias img:hover {
+   scale: 1.15;
+}
+
+
+/* Mobile */
+
+@media(max-width: 1000px) {
+   h1 {
+      font-size: 2em;
+   }
+   h2 {
+      font-size: 1.7em;;
+   }
+   
+   h3 {
+      font-size: 1.5em;
+   }
+
+   .max-width-page {
+      width: 100%;
+   }
+
+   #header-main {
+      /* background-image: url(); */
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+   }
+
+   .about-infos-page {
+      flex-direction: column;
+      align-self: center;
+      justify-content: center;
+   }
+   .about-infos-page #computer-background {
+      width: 90%;
+   }
+
+   .about-infos-page #computer-background img {
+      margin-left: 0;
+   }
+
+   .about-infos-page #about-infos {
+      align-items: center;
+      text-align: center;
+   }
+   
+   #about-infos .infos {
+      max-width: 100%;
+   }
+
+   .devices-connects {
+      width: 90%;
+   }
+
+   .benefits-product {
+      flex-direction: column;
+      align-items: center;
+      gap: 2.5em;
+   }
+   .block-benefits-product {
+      max-width: 100%;
+   }
+   .block-benefits-product img {
+      margin-bottom: .5em;
+   }
+
+   .partners {
+      margin: 1em 0;
+   }
+
+   .partners ul {
+      flex-direction: column;
+      gap: 2em;
+   }
+
+   #footer-main {
+      max-width: 100%;
+   }
+}
+
+@media(max-width: 750px) {
+   .buttons-download {
+      flex-direction: column;
+      width: 100%;
+   }
+
+   .max-width-page img {
+      width: 100px;
+   }
+
+   #header-main {
+      padding-top: 0;
+   }
+
+   #footer-main {
+      flex-direction: column;
+      gap: 3em;
+      padding: 1em 1em 2em 1em;
+   }
+
+   #footer-main .policies-site {
+      max-width: 100%;
+   }
+
+   #footer-main .policies-site ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+
+   #footer-main .social-medias {
+      gap: 2em;
+   }
+}
