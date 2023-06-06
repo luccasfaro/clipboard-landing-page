@@ -260,13 +260,6 @@ p {
       width: 100%;
    }
 
-   #header-main {
-      /* background-image: url(); */
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-   }
-
    .about-infos-page {
       flex-direction: column;
       align-self: center;
@@ -331,6 +324,7 @@ p {
 
    #header-main {
       padding-top: 0;
+      background-image: url(../images/bg-header-mobile.png);
    }
 
    #footer-main {
